@@ -26,6 +26,7 @@ class JegyFoglalas:
                                      1) and (flight.flightStart > mostido):
             flight.numberOfBooking += 1
             self._bookedFlights.append([id, flight])
+            print(f"A foglalás sikeres! Az jegy ára: {flight.flightPrice} Forint \n")
         elif (flight.maxPassanger) < (flight.numberOfBooking + 1):
             print("A járat megtelt!")
         else:
