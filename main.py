@@ -15,10 +15,7 @@ class bookingClass:
     def initData(self):
         global hiba
         hiba = False
-        global mostido 
-        #mostido = datetime.strptime(input("Kérem adja meg a jelenlegi dátumot ÉÉÉÉ.HH.NN formában: \t"), "%Y.%m.%d.").date()
-        #mostido = input("Kérem adja meg a jelenelegi dátumot ÉÉÉÉ.HH.NN formában: ")
-        #mostido = datetime.date(input("Kérem adja meg a jelenelegi dátumot ÉÉÉÉ.HH.NN formában: \t"))
+        global mostido
         try:
             mostido = datetime.strptime(input("Kérem adja meg a jelenelegi dátumot ÉÉÉÉ.HH.NN. formában: \t"), "%Y.%m.%d.").date()
         except:
@@ -34,10 +31,6 @@ class bookingClass:
         self.booking.initBookAFlight(4, self._airLine.getScheduledFlight(0))
         self.booking.initBookAFlight(5, self._airLine.getScheduledFlight(1))
         self.booking.initBookAFlight(6, self._airLine.getScheduledFlight(1))
-        #self.booking.bookAFlight(2, self._airLine.getScheduledFlight(1), "2024.11.05.")
-        #self.booking.bookAFlight(3, self._airLine.getScheduledFlight(2), "2024.06.08.")
-        #self.booking.bookAFlight(4, self._airLine.getScheduledFlight(0), "2024.11.28.")
-        #self.booking.bookAFlight(5, self._airLine.getScheduledFlight(1), "2024.12.02.")
     def userInteract(self):
         try:
             while True and not hiba:

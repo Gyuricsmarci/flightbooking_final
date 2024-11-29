@@ -57,8 +57,3 @@ Minden járatra legkésőbb  az indulást megelőző naptári napon lehet foglal
             if foglalas[0] > max:
                 max = foglalas[0]
         return max
-        
-"""    @bookedFlights.setter
-    def bookedFlights(self, newBooking):
-        self._bookedFlights.append((newBooking))
-"""
